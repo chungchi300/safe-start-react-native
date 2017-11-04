@@ -6,8 +6,9 @@ import { StyledText, StyledView } from "components/Universal";
 import { Icon } from "native-base";
 import { Button } from "react-native";
 import config from "config.js";
-import Author from "views/Author.js";
+import Counter from "views/Counter";
 import _ from "lodash";
+
 class Front extends React.Component {
   render() {
     let numDescription;
@@ -21,9 +22,9 @@ class Front extends React.Component {
       <StyledView>
         <StyledText>Open up App.js to start working on your app!</StyledText>
         <StyledText>Change you make will automatically reload.</StyledText>
-        <StyledText>Shake your phoddne to open the developer menu.</StyledText>
+        <StyledText>Shake your phone to open the developer menu.</StyledText>
         <StyledText>Author : {config.author}</StyledText>
-        <Author />
+        <Counter />
       </StyledView>
     );
   }
