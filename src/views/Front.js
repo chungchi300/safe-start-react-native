@@ -8,16 +8,17 @@ import { Button } from "react-native";
 import config from "config.js";
 import Counter from "views/Counter";
 import _ from "lodash";
+import Author from "views/Author";
 
 class Front extends React.Component {
   render() {
-
     return (
       <Container>
         <StyledText>Open up App.js to start working on your app!</StyledText>
         <StyledText>Change you make will automatically reload.</StyledText>
         <StyledText>Shake your phone to open the developer menu.</StyledText>
         <StyledText>Author : {config.author}</StyledText>
+        <Author />
         <Counter />
       </Container>
     );
