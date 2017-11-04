@@ -2,7 +2,7 @@ import React, { PropTypes } from "react";
 import { connect } from "react-redux";
 import _ from "lodash";
 
-import { StyledText, StyledView } from "components/Universal";
+import { StyledText, Container } from "components/Universal";
 class Author extends React.Component {
   render() {
     return <StyledText>Jeff Chung</StyledText>;

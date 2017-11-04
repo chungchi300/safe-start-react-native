@@ -15,6 +15,7 @@ Safe-Start-React-Native is more than a **react-native starter project**.it is a 
  * Easiest build tool (CRNA,CRNA)
  * Test (Jest)
  * Formatting(Prettier by cli)
+ * Development(Webstorm config)
 
 ## Advantage:
  * Membership example(Login,SignUp)
