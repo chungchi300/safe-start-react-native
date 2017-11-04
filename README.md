@@ -1,5 +1,5 @@
 ## Quick Overview
-Real-Start is more than a **react-native starter project**.it is a project already provide **mature solution** to problems that software engineer very likely to encounter when develop **react-native app** that has **high complex ui logic**.
+Safe-Start-React-Native is more than a **react-native starter project**.it is a project already provide **mature solution** to problems that software engineer very likely to encounter when develop **react-native app** that has **high complex ui logic**.
 
 ## Content
 
@@ -7,13 +7,14 @@ Real-Start is more than a **react-native starter project**.it is a project alrea
 
 
 ## Solution included & Technologies:
- * Predictable Behaviour,State (Redux)
- * Async action (Redux thunk,async await)
+ * Predictable Behaviour,State (Redux) - Done
+ * Async action (Redux thunk,async await) - Done
  * Network (Redux-api-middleware)
  * Routing (React Navigation)
  * Quick UI development (Native Base&StyledComponent)
  * Easiest build tool (CRNA,CRNA)
  * Test (Jest)
+ * Formatting(Prettier by cli)
 
 ## Advantage:
  * Membership example(Login,SignUp)
@@ -23,9 +24,9 @@ Real-Start is more than a **react-native starter project**.it is a project alrea
  * Allow absolute path(not more relative path hell!)
 
 ## Get Started:
-$ git clone https://github.com/chungchi300/real-start
+$ git clone https://github.com/chungchi300/safe-start-react-native
 
-$ cd real-start/
+$ cd safe-start-react-native/
 
 $ yarn install
 
