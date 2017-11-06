@@ -1,4 +1,5 @@
 ## Quick Overview
+
 Safe-Start-React-Native is more than a **react-native starter project**.it is a project already provide **mature solution** to problems that software engineer very likely to encounter when develop **react-native app** that has **high complex ui logic&complex network api call logic**.
 
 ## Content
@@ -19,6 +20,7 @@ Safe-Start-React-Native is more than a **react-native starter project**.it is a 
  * Allow absolute path(not more relative path hell!) - Done
 
 ## Get Started:
+
 $ git clone https://github.com/chungchi300/safe-start-react-native
 
 $ cd safe-start-react-native/
