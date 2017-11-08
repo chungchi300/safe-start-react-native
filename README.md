@@ -1,3 +1,5 @@
+/home/jeffchung/work/software/android-sdk/tools/emulator -netdelay none -netspeed full -avd Nexus_S_API_25
+
 ## Quick Overview
 
 Safe-Start-React-Native is more than a **react-native starter project**.it is a project already provide **mature solution** to problems that software engineer very likely to encounter when develop **react-native app** that has **high complex ui logic&complex network api call logic**.

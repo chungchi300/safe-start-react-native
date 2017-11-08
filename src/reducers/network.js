@@ -1,26 +1,15 @@
-import _ from "lodash";
+import _ from 'lodash';
+
 export default function network(state = {}, action) {
   switch (true) {
-    case action.type === "SUCCESS":
-      let so = {};
+    case action.type === 'SUCCESS':
+      return { ...state, [action.meta.source]: 'SUCCESS' };
 
-      so[action.meta.source] = "SUCCESS";
+    case action.type === 'FAILURE':
+      return { ...state, [action.meta.source]: 'FAILURE' };
 
-      return { ...state, ...so };
-
-    case action.type === "FAILURE":
-      let fo = {};
-
-      fo[action.meta.source] = "FAILURE";
-
-      return { ...state, ...fo };
-
-    case action.type === "REQUEST":
-      let ro = {};
-
-      ro[action.meta.source] = "REQUEST";
-
-      return { ...state, ...ro };
+    case action.type === 'REQUEST':
+      return { ...state, [action.meta.source]: 'REQUEST' };
   }
   return state;
 }
