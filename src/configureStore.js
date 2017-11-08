@@ -5,14 +5,9 @@ import rootReducer from 'reducers';
 import { Platform } from 'react-native';
 import { apiMiddleware } from 'redux-api-middleware';
 const middlewares = [thunk, apiMiddleware];
-
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 export default function configureStore(initialState) {
-  const enhancer = compose(
-    // Middleware you want to use in development:
-    applyMiddleware(...middlewares),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  const enhancer = composeEnhancers(applyMiddleware(...middlewares));
 
-    // Required! Enable Redux DevTools with the monitors you chose
-  );
   return createStore(rootReducer, initialState, enhancer);
 }
