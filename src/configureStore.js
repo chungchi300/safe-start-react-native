@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import devTools from 'remote-redux-devtools';
+
 import thunk from 'redux-thunk';
 import rootReducer from 'reducers';
 import { Platform } from 'react-native';
@@ -10,11 +10,7 @@ export default function configureStore(initialState) {
   const enhancer = compose(
     // Middleware you want to use in development:
     applyMiddleware(...middlewares),
-    devTools({
-      name: Platform.OS,
-      hostname: 'localhost',
-      realtime: true,
-    })
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
     // Required! Enable Redux DevTools with the monitors you chose
   );

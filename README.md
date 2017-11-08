@@ -28,7 +28,7 @@ $ git clone https://github.com/chungchi300/safe-start-react-native
 $ cd safe-start-react-native/
 
 $ yarn install
-
+## start your react native debugger if you want react-native debugger
 $ yarn start
 
 
