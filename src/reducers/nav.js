@@ -1,5 +1,5 @@
-import { AppNavigator } from "../AppNavigator";
-const firstAction = AppNavigator.router.getActionForPathAndParams("Front");
+import { AppNavigator } from '../AppNavigator';
+const firstAction = AppNavigator.router.getActionForPathAndParams('Front');
 
 const initialNavState = AppNavigator.router.getStateForAction(firstAction);
 export default function nav(state = initialNavState, action) {
