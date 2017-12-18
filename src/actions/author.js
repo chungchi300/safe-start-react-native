@@ -1,4 +1,5 @@
 import { CALL_API } from 'redux-api-middleware';
+
 export function load() {
   return async (dispatch, getState) => {
     let result = await dispatch({

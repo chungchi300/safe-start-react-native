@@ -11,6 +11,9 @@ import _ from 'lodash';
 import Author from 'views/Author';
 
 class Front extends React.Component {
+  static navigationOptions = ({ navigation }) => ({
+    title: `Front`,
+  });
   render() {
     return (
       <Container>

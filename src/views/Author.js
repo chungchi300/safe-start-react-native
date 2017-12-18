@@ -5,6 +5,9 @@ import _ from 'lodash';
 import { StyledText, Container, Content } from 'components/Universal';
 import Action from 'actions';
 class Author extends React.Component {
+  static navigationOptions = ({ navigation }) => ({
+    title: `Author`,
+  });
   componentDidMount() {
     this.props.load();
   }
@@ -15,11 +18,13 @@ class Author extends React.Component {
     }
     let network = <StyledText>{this.props.network}</StyledText>;
     return (
-      <Content>
-        <StyledText>Jeff Chung - </StyledText>
-        {author}
-        {network}
-      </Content>
+      <Container>
+        <Content>
+          <StyledText>Jeff Chung - </StyledText>
+          {author}
+          {network}
+        </Content>
+      </Container>
     );
   }
 }

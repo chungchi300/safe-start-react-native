@@ -1,12 +1,15 @@
-import React, { PropTypes } from "react";
-import { connect } from "react-redux";
-import _ from "lodash";
-import { StyledText, Container, Content } from "components/Universal";
-import { Button, View } from "react-native";
-import Action from "actions";
-import { isEven } from "helpers/Format.js";
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
+import _ from 'lodash';
+import { StyledText, Container, Content } from 'components/Universal';
+import { Button, View } from 'react-native';
+import Action from 'actions';
+import { isEven } from 'helpers/Format.js';
 
 class Counter extends React.Component {
+  static navigationOptions = ({ navigation }) => ({
+    title: `Counter`,
+  });
   render() {
     let numDescription;
 
@@ -16,14 +19,16 @@ class Counter extends React.Component {
       numDescription = <StyledText>Is odd</StyledText>;
     }
     return (
-      <Content>
-        <StyledText>Number of count = {this.props.count}</StyledText>
-        {numDescription}
-        <Button
-          onPress={this.props.increaseCount}
-          title="Click to increase count"
-        />
-      </Content>
+      <Container>
+        <Content>
+          <StyledText>Number of count = {this.props.count}</StyledText>
+          {numDescription}
+          <Button
+            onPress={this.props.increaseCount}
+            title="Click to increase count"
+          />
+        </Content>
+      </Container>
     );
   }
 }
