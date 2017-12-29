@@ -1,14 +1,5 @@
 {
-  "presets": [
-    "babel-preset-expo",
-    [
-      "env",
-      {
-        "modules": false
-      }
-    ],
-    "react"
-  ],
+  "presets": ["babel-preset-expo"],
   "plugins": [
     [
       "babel-plugin-module-resolver",
