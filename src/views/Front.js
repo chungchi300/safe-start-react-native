@@ -29,6 +29,7 @@ class Front extends React.Component {
           onPress={this.props.goToCounter}
           title="Counter(Simple logic calculation in redux)"
         />
+        <Button onPress={this.props.goToPet} title="Go To Pet(Numbr of pets)" />
       </Container>
     );
   }
@@ -49,6 +50,10 @@ function mapDispatchToProps(dispatch, ownProps) {
     },
     goToCounter() {
       return dispatch(Action.Nav.goTo('Counter'));
+    },
+    goToPet() {
+      console.log('going to pet');
+      return dispatch(Action.Nav.goTo('Pet'));
     },
   };
 }

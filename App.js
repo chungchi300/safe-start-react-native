@@ -13,7 +13,7 @@ import AppWithNavigationState from './src/AppNavigator';
 import SWAGGER from 'swagger.js';
 import Api from 'redux-api-middleware-addon';
 store.dispatch(Api.Action.setSwagger(SWAGGER));
-console.log(store.getState());
+
 export default class App extends React.Component {
   render() {
     return (
