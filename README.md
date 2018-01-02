@@ -20,7 +20,7 @@ Safe-Start-React-Native is more than a **react-native starter project**.it is a 
  * Formatting(Prettier by cli in npm) - Done
  * Development(Webstorm config) - Done
  * Allow absolute path(not more relative path hell!) - Done
-
+ * Login & Register(Redux form & swagger api) - Done
 ## Get Started:
 
 $ git clone https://github.com/chungchi300/safe-start-react-native

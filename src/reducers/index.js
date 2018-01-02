@@ -8,6 +8,8 @@ const rootReducer = function(state = {}, action) {
     count: count(state.count, action),
     domain: domain(state.domain, action),
     network: Api.Reducer.network(state.network, action),
+    api: Api.Reducer.api(state.api, action),
+    domain: Api.Reducer.domain(state.domain, action),
     nav: nav(state.nav, action),
   };
 };

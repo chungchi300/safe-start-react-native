@@ -3,7 +3,7 @@ import { Provider, connect } from 'react-redux';
 
 import Action from 'actions';
 import { StyledText, Container } from 'components/Universal';
-import { Icon } from 'native-base';
+
 import { Button } from 'react-native';
 import config from 'config.js';
 import Counter from 'views/Counter';

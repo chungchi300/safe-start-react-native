@@ -20,6 +20,7 @@ class Author extends React.Component {
     return (
       <Container>
         <Content>
+          <StyledText>Plain redux api middleware - </StyledText>
           <StyledText>Jeff Chung - </StyledText>
           {author}
           {network}
