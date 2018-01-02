@@ -1,4 +1,4 @@
-import count from './count.js';
+import count from './count';
 import network from './network.js';
 import domain from './domain';
 import Api from 'redux-api-middleware-addon';

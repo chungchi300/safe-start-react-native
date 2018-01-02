@@ -13,9 +13,9 @@ Safe-Start-React-Native is more than a **react-native starter project**.it is a 
  * Predictable Behaviour,State (Redux) - Done
  * Async action (Redux thunk,async await) - Done
  * Network (Redux-api-middleware) - Done
- * Routing (React Navigation)
+ * Routing (React Navigation) - Done
  * Test (Jest)
- * Quick UI development (Native Base&StyledComponent)
+ * Quick UI development (Native Base&StyledComponent) - Done
  * Easiest build tool (CRNA) - Done
  * Formatting(Prettier by cli in npm) - Done
  * Development(Webstorm config) - Done
